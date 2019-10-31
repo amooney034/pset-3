@@ -5,14 +5,14 @@ const MAX = Number.MAX_SAFE_INTEGER;
 const enter = Number(readlineSync.question("\nEnter a number: "));
 
 if (enter < MIN || enter > MAX) {
-    console.log("\nInvalid.");
+    console.log("\nInvalid.\n");
 }
   else if (enter > 0) {
-    console.log("\nPositive.");
+    console.log("\nPositive.\n");
 }
 else if (enter < 0) {
-  console.log("\nNegative.");
+  console.log("\nNegative.\n");
 }
 else {
-    console.log("\nZero.");
+    console.log("\nZero.\n");
 }
