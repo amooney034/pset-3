@@ -1,6 +1,18 @@
 const readlineSync = require("readline-sync");
-const x = Number.MIN_SAFE_INTEGER;
-const y = Number.MAX_SAFE_INTEGER;
+const MIN = Number.MIN_SAFE_INTEGER;
+const MAX = Number.MAX_SAFE_INTEGER;
 
-const positive = Number(readlineSync.question("\nEnter a number: "));
-console.log("\n" +  + ".\n");
+const enter = Number(readlineSync.question("\nEnter a number: "));
+
+if (enter < MIN || enter > MAX) {
+    console.log("\nInvalid.");
+}
+  else if (enter > 0) {
+    console.log("\nPositive.");
+}
+else if (enter < 0) {
+  console.log("\nNegative.");
+}
+else {
+    console.log("\nZero.");
+}

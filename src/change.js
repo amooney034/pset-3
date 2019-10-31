@@ -9,11 +9,12 @@ const pennies = .01
 const amount = Number(readlineSync.question("\nEnter a dollar amount: "));
 
 if (Number.isNaN(amount)) {
-    "Invalid."
+    console.log("Invalid.");
 } else if (amount < MIN || amount > MAX) {
-    // print your error message here
+    console.log("Invalid.");
 } else {
-    // write your code for making change here
-}
+  if ()
 
-console.log("\n quarters, " + " dimes, " + " nickels, and " + "pennies." );
+  }
+
+}
