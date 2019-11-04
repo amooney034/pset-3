@@ -7,12 +7,15 @@ const enter = Number(readlineSync.question("\nEnter a number: "));
 if (enter < MIN || enter > MAX) {
     console.log("\nInvalid.\n");
 }
-  else if (enter > 0) {
-    console.log("\nPositive.\n");
+else if (Number.isNaN(enter)) {
+  console.log("\nInvalid.\n");
+}
+else if (enter > 0) {
+  console.log("\nPositive.\n");
 }
 else if (enter < 0) {
   console.log("\nNegative.\n");
 }
 else {
-    console.log("\nZero.\n");
+  console.log("\nZero.\n");
 }
