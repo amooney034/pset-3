@@ -1,6 +1,6 @@
 const readlineSync = require("readline-sync");
 
-const enter = readlineSync.question("\nEnter a letter grade: ");
+const enter = String(readlineSync.question("\nEnter a letter grade: "));
 
 if ((enter == "a+" || enter == "A+")) {
   console.log("\nYour GPA is 4.00.\n");

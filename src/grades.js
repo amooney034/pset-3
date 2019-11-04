@@ -1,7 +1,7 @@
 const readlineSync = require("readline-sync");
+
 const MIN = 0;
 const MAX = 100;
-
 const enter = Number(readlineSync.question("\nEnter a grade: "));
 
 if (enter < MIN || enter > MAX) {
@@ -19,6 +19,9 @@ else if (enter < 80 && enter > 69) {
 else if (enter < 70 && enter > 59) {
   console.log("\nYou received a(n) D.\n");
 }
-else {
+else if (enter < 60 && enter >= 0) {
   console.log("\nYou received a(n) F.\n");
+}
+else {
+  console.log("\nInvalid.\n");
 }

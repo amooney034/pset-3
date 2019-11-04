@@ -1,5 +1,7 @@
 const readlineSync = require("readline-sync");
-const enter = readlineSync.question("\nEnter a month: ");
+
+const month = String(readlineSync.question("\nEnter a month: "));
+const enter = month.toLowerCase();
 
 if (enter == "feb") {
   console.log("\n28 or 29 days.\n");
