@@ -9,7 +9,7 @@ const enter = Number(readlineSync.question("\nEnter a year: "));
 if (enter < MIN || enter > MAX) {
   console.log("\nInvalid.\n");
 }
-else if (enter % 4 === 0) {
+else if (enter % 4 === 0 && enter % 100 !== 0 || enter % 400 === 0) {
   console.log("\n" + enter + " is a leap year.\n");
 }
 else if (Number.isNaN(enter)) {

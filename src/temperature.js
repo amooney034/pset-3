@@ -24,13 +24,13 @@ else if ((temp > 0 && temp < 100) && scaleUp == "C") {
 else if (temp >= 100 && scaleUp == "C") {
   console.log("\nGas.\n");
 }
-else if (temp <= 273.2 && scaleUp == "K") {
+else if (temp <= 273.15 && scaleUp == "K") {
   console.log("\nSolid.\n");
 }
-else if ((temp > 273.2 && temp < 373.2) && scaleUp == "K") {
+else if ((temp > 273.15 && temp < 373.15) && scaleUp == "K") {
   console.log("\nLiquid.\n");
 }
-else if (temp >= 373.2 && scaleUp == "K") {
+else if (temp >= 373.15 && scaleUp == "K") {
   console.log("\nGas.\n");
 }
 else {
